@@ -6,5 +6,5 @@ Mr. Torgue High-Five Flexington is a character from the Borderlands video game f
 
 ### Current Progress
 
-![Part 1](https://github.com/hgotia/MrTorgue/blob/master/Screenshots/Update2.png)
+![Part 1](https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Update2.png)
 > It's looking better
