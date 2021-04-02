@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Pistols.Views.Home
+namespace Pistols.Pages
 {
-    public class IndexModel : PageModel
+    public class _CartLayoutModel : PageModel
     {
         public void OnGet()
         {

@@ -72,7 +72,7 @@ namespace Pistols.Models
                     {
                         Name = "Devastator",
                         Description = "Hail - Increased damage and fires a two-round burst. Decreased bullet velocity.",
-                        Category = "Seraph/Pearl",
+                        Category = "Seraph",
                         Price = 15000
                     }
                     );
