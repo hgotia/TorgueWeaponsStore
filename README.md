@@ -1,8 +1,6 @@
 # Mr Torgue's Weapon Store
 
-> I'm still working on it
-
-Mr. Torgue High-Five Flexington is a character from the Borderlands video game franchise. This is a list of the available Torgue pistols from Borderlands 2.
+#### Mr. Torgue High-Five Flexington is a character from the Borderlands video game franchise. This is a list of the available Torgue pistols from Borderlands 2.
 
 ### Chapter 7
 This chapter focused on the infrastructure of the application including setting up the following:
