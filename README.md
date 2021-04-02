@@ -15,6 +15,15 @@ This chapter focused on the infrastructure of the application including setting 
 > END OF CHAPTER 7 application look
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter7.png" width="800">
 
-### Chapter 7
-
+### Chapter 8
+> END OF CHAPTER 8 application look
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Fig%208-5.png" width="800" height="800">
+
+#### Shopping Cart
+
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Fig8-10.png" width="800">
+
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/fig8-11.png" width="800">
+
+#### Unit Tests
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/PostCh8Tests.png" width="800">
