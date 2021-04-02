@@ -14,3 +14,7 @@ This chapter focused on the infrastructure of the application including setting 
 
 > END OF CHAPTER 7 application look
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter7.png" width="800">
+
+### Chapter 7
+
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Fig%208-5.png" width="800" height="800">
