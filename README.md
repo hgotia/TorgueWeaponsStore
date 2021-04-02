@@ -15,4 +15,4 @@ This chapter focused on the infrastructure of the application including setting 
 * Pagination
 
 > END OF CHAPTER 7 application look
-![Part 1](https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter7.png)
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter7.png" width="800">
