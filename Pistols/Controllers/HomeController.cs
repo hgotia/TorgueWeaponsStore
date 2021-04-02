@@ -2,6 +2,7 @@
 using Pistols.Models;
 using System.Linq;
 using Pistols.Models.ViewModels;
+using System;
 
 namespace Pistols.Controllers
 {
