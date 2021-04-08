@@ -19,19 +19,22 @@ namespace Pistols
         {
             Configuration = config;
         }
-
         private IConfiguration Configuration { get; set; }
-
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<StoreDbContext>(opts => opts.UseSqlServer(Configuration["ConnectionStrings:MrTorgueWeaponsConnection"]));
+            services.AddDbContext<StoreDbContext>(opts => {
+                opts.UseSqlServer(
+                Configuration["ConnectionStrings:MrTorgueWeaponsConnection"]);
+            });
             services.AddScoped<IStoreRepository, EFStoreRepository>();
+            services.AddScoped<IOrderRepository, EFOrderRepository>();
             services.AddRazorPages();
             services.AddDistributedMemoryCache();
             services.AddSession();
+            services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
-
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseDeveloperExceptionPage();
@@ -39,22 +42,17 @@ namespace Pistols
             app.UseStaticFiles();
             app.UseSession();
             app.UseRouting();
-            app.UseEndpoints(endpoints =>
-            {
+            app.UseEndpoints(endpoints => {
                 endpoints.MapControllerRoute("catpage",
-                    "{category}/Page{productPage:int}",
-                    new { Controller = "Home", action = "Index" });
-
+                "{category}/Page{productPage:int}",
+                new { Controller = "Home", action = "Index" });
                 endpoints.MapControllerRoute("page", "Page{productPage:int}",
-                    new { Controller = "Home", action = "Index", productPage = 1 });
-
+                new { Controller = "Home", action = "Index", productPage = 1 });
                 endpoints.MapControllerRoute("category", "{category}",
-                    new { Controller = "Home", action = "Index", productPage = 1 });
-
+                new { Controller = "Home", action = "Index", productPage = 1 });
                 endpoints.MapControllerRoute("pagination",
-                    "Products/Page{productPage}",
-                    new { Controller = "Home", action = "Index", productPage = 1 });
-
+                "Products/Page{productPage}",
+                new { Controller = "Home", action = "Index", productPage = 1 });
                 endpoints.MapDefaultControllerRoute();
                 endpoints.MapRazorPages();
             });

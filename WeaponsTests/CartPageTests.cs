@@ -23,75 +23,41 @@ namespace Pistols.Tests
             Product p1 = new Product { ProductID = 1, Name = "P1" };
             Product p2 = new Product { ProductID = 2, Name = "P2" };
             Mock<IStoreRepository> mockRepo = new Mock<IStoreRepository>();
-            mockRepo.Setup(m => m.Products).Returns((new Product[]
-            {
-                p1, p2
-            }).AsQueryable<Product>());
+            mockRepo.Setup(m => m.Products).Returns((new Product[] {p1, p2})
+                .AsQueryable<Product>());
 
-            // - create a cart            
+            // - create a cart
             Cart testCart = new Cart();
             testCart.AddItem(p1, 2);
             testCart.AddItem(p2, 1);
 
-            // - create a mock page context and session            
-            Mock<ISession> mockSession = new Mock<ISession>();
-            byte[] data =
-                Encoding.UTF8.GetBytes(JsonSerializer.Serialize(testCart));
-            mockSession.Setup(c => c.TryGetValue(It.IsAny<string>(), out data));
-            Mock<HttpContext> mockContext = new Mock<HttpContext>();
-            mockContext.SetupGet(c => c.Session).Returns(mockSession.Object);
-
-
             // Action            
-            CartModel cartModel = new CartModel(mockRepo.Object)
-            {
-                PageContext = new PageContext(new ActionContext
-                {
-                    HttpContext = mockContext.Object,
-                    RouteData = new RouteData(),
-                    ActionDescriptor = new PageActionDescriptor()
-                })
-            };
+            CartModel cartModel = new CartModel(mockRepo.Object, testCart);
             cartModel.OnGet("myUrl");
 
-
-            //Assert            
+            //Assert
             Assert.Equal(2, cartModel.Cart.Lines.Count());
             Assert.Equal("myUrl", cartModel.ReturnUrl);
         }
 
         [Fact]
         public void Can_Update_Cart()
-        {
-            // Arrange    
-            // - create a mock repository    
+        {  
+            // Arrange
+            // - create a mock repository
             Mock<IStoreRepository> mockRepo = new Mock<IStoreRepository>();
-            mockRepo.Setup(m => m.Products).Returns((new Product[]
-            {
-                new Product { ProductID = 1, Name = "P1" }
-            }).AsQueryable<Product>());
+            
+            mockRepo.Setup(m => m.Products).Returns((new Product[] {
+                new Product { ProductID = 1, Name = "P1" }})
+                .AsQueryable<Product>());
+            
             Cart testCart = new Cart();
-            Mock<ISession> mockSession = new Mock<ISession>();
-            mockSession.Setup(s => s.Set(It.IsAny<string>(), It.IsAny<byte[]>()))
-                .Callback<string, byte[]>((key, val) =>
-                {
-                    testCart = JsonSerializer.Deserialize<Cart>(Encoding.UTF8.GetString(val));
-                });
-            Mock<HttpContext> mockContext = new Mock<HttpContext>();
-            mockContext.SetupGet(c => c.Session).Returns(mockSession.Object);
-
-            // Action    
-            CartModel cartModel = new CartModel(mockRepo.Object)
-            {
-                PageContext = new PageContext(new ActionContext
-                {
-                    HttpContext = mockContext.Object,
-                    RouteData = new RouteData(),
-                    ActionDescriptor = new PageActionDescriptor()
-                })
-            };
+            
+            // Action
+            CartModel cartModel = new CartModel(mockRepo.Object, testCart);
             cartModel.OnPost(1, "myUrl");
-            //Assert    
+           
+            //Assert
             Assert.Single(testCart.Lines);
             Assert.Equal("P1", testCart.Lines.First().Product.Name);
             Assert.Equal(1, testCart.Lines.First().Quantity);
