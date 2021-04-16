@@ -68,9 +68,9 @@ Chapter 10 focuses on creating the admin pages to create, edit, and delete produ
 
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-1.png" width="500">
 
-<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-0.png" width="500">
-
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-5.png" width="500">
+
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-0.png" width="500">
 
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-2.png" width="500">
 
