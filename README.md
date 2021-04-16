@@ -2,6 +2,9 @@
 
 #### Mr. Torgue High-Five Flexington is a character from the Borderlands video game franchise. This is a list of the available Torgue pistols from Borderlands 2.
 
+## Table of Contents
+  * [Chapter 7](#chapter-7)
+
 ### Chapter 7
 This chapter focused on the infrastructure of the application including setting up the following:
 * Project folders
@@ -55,3 +58,12 @@ Thank you/Successful order page
 Tests passing
 
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/ch9-6.png">
+
+### Chapter 10
+Chapter 10 focuses on creating the admin pages to create, edit, and delete products using Blazor pages.
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-1.png" width="500">
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-0.png" width="500">
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-5.png" width="500">
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-2.png" width="500">
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-3.png" width="500">
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-4.png" width="500">
