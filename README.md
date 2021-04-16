@@ -4,6 +4,9 @@
 
 ## Table of Contents
   * [Chapter 7](#chapter-7)
+  * [Chapter 8](#chapter-8)
+  * [Chapter 9](#chapter-9)
+  * [Chapter 10](#chapter-10)
 
 ### Chapter 7
 This chapter focused on the infrastructure of the application including setting up the following:
@@ -61,9 +64,16 @@ Tests passing
 
 ### Chapter 10
 Chapter 10 focuses on creating the admin pages to create, edit, and delete products using Blazor pages.
+
+
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-1.png" width="500">
+
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-0.png" width="500">
+
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-5.png" width="500">
+
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-2.png" width="500">
+
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-3.png" width="500">
+
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-4.png" width="500">
