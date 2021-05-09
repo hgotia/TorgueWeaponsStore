@@ -7,6 +7,7 @@
   * [Chapter 8](#chapter-8)
   * [Chapter 9](#chapter-9)
   * [Chapter 10](#chapter-10)
+  * [Chapter 11](#chapter-11)
 
 ### Chapter 7
 This chapter focused on the infrastructure of the application including setting up the following:
@@ -77,3 +78,6 @@ Chapter 10 focuses on creating the admin pages to create, edit, and delete produ
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-3.png" width="600">
 
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter10-4.png" width="600">
+
+### Chapter 11
+This chapter is all about security with MS Identity and deployment of the applicaiton with docker
