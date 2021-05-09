@@ -81,3 +81,8 @@ Chapter 10 focuses on creating the admin pages to create, edit, and delete produ
 
 ### Chapter 11
 This chapter is all about security with MS Identity and deployment of the applicaiton with docker
+
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter11-0.png" width="600">
+
+<img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter11-1.png" width="600">
+
