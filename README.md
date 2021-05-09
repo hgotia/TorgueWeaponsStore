@@ -86,3 +86,4 @@ This chapter is all about security with MS Identity and deployment of the applic
 
 <img src="https://github.com/hgotia/TorgueWeaponsStore/blob/master/Screenshots/Chapter11-1.png" width="600">
 
+> Docker modules have yet to work. Screenshots coming soon
